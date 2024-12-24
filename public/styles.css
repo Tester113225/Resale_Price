@@ -1,0 +1,119 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  color: #0056b3;
+}
+
+h2 {
+  color: #004085;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #0056b3;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Container for left and right sides */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Styling for the left side with buttons */
+.left-side {
+  flex: 1;
+}
+
+/* Styling for the right side with the SVG */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-map-svg {
+  max-width: 100%;  /* Ensures the SVG resizes with the screen */
+  height: auto;     /* Keeps the aspect ratio intact */
+  max-height: 400px; /* Optional: set a maximum height */
+}
+
+/* Dataset Information Section */
+.dataset-info {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.dataset-info h2 {
+  margin-bottom: 20px;
+}
+
+.dataset-info p {
+  line-height: 1.6;
+}
+
+.dataset-info ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.dataset-info ul li {
+  margin-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
