@@ -77,6 +77,7 @@ app.get('/', (req, res) => {
     </html>
   `);
 });
+
   
   // Example route: Get towns
 app.get('/towns', (req, res) => {
@@ -267,7 +268,7 @@ app.get('/transactions', (req, res) => {
             </script>
             <button onclick="location.href='/'">Go to Home</button>
             <button onclick="location.href='/towns'">Go to Towns</button>
-            <button onclick="location.href='/average-prices'">Go to Average Prices</button>
+            <button onclick="location.href='/comparison-average-prices'">Comparison of Average Prices Between Towns</button>
             <button onclick="location.href='/flats'">Go to Available Flats</button>
             <button onclick="location.href='/CPFT'">comparison -of- resale prices-by-flat-types</button>
           </body>
@@ -317,7 +318,7 @@ app.get('/transactions', (req, res) => {
             </table>
             <button onclick="location.href='/'">Go to Home</button>
             <button onclick="location.href='/towns'">Go to Towns</button>
-            <button onclick="location.href='/average-prices'">Go to Average Prices</button>
+             <button onclick="location.href='/comparison-average-prices'">Comparison of Average Prices Between Towns</button>
             <button onclick="location.href='/CPFT'">comparison -of- resale prices-by-flat-types</button>
             <button onclick="location.href='/transactions'">Go to Transactions</button>
           </body>
@@ -419,7 +420,7 @@ app.get('/transactions', (req, res) => {
             <button onclick="location.href='/'">Go to Home</button>
             <button onclick="location.href='/towns'">Go to Towns</button>
             <button onclick="location.href='/flats'">Go to Available Flats</button>
-            <button onclick="location.href='/CPFT'">comparison -of- resale prices-by-flat-types</button>
+             <button onclick="location.href='/comparison-average-prices'">Comparison of Average Prices Between Towns</button>
             <button onclick="location.href='/transactions'">Go to Transactions</button>
           </body>
         </html>
