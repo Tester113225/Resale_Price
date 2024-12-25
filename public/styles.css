@@ -54,18 +54,15 @@ button:hover {
   flex: 1;
 }
 
-/* Styling for the right side with the SVG */
-.right-side {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .location-map-svg {
-  max-width: 100%;  /* Ensures the SVG resizes with the screen */
+  max-width: 90%;  /* Ensures the SVG resizes with the screen */
   height: auto;     /* Keeps the aspect ratio intact */
-  max-height: 400px; /* Optional: set a maximum height */
+  max-height: 350px; /* Optional: set a maximum height */
+
+border-radius: 10%;
+border: 1px solid black;
 }
 
 /* Dataset Information Section */
@@ -116,4 +113,18 @@ th {
 
 tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.map-heading {
+  text-align: center; /* Center-align the text */
+  margin-top: 10px; /* Add spacing between the map and the heading */
+  color: #0056b3; /* Match the color scheme */
+  font-size: 18px; /* Adjust font size for visibility */
 }
