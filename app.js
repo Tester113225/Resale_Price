@@ -45,14 +45,16 @@ app.get('/', (req, res) => {
             <button onclick="location.href='/transactions'">Go to Transactions</button>
             <button onclick="location.href='/comparison-average-prices'">Compare Average Prices by Town</button>
           </div>
-
-          <div class="right-side">
-            <!-- Import the SVG image from the public folder -->
-            <img src="/Singapore_location_map.svg" alt="Singapore Location Map" class="location-map-svg">
-         
+          <div class="mbox">
+            <div class="right-side">
+              <!-- Import the SVG image from the public folder -->
+              <img src="/Singapore_location_map.svg" alt="Singapore Location Map" class="location-map-svg">
+              <!-- Add the heading below the map -->
+              <h3 class="map-heading">Singapore Map</h3>
             </div>
+          </div>
         </div>
-
+  
         <!-- Dataset Information Section -->
         <section class="dataset-info">
           <h2>Resale Flat Prices Dataset Overview</h2>
@@ -71,12 +73,10 @@ app.get('/', (req, res) => {
           <h3>Additional Information</h3>
           <p><strong>Housing & Development Board (HDB):</strong> HDB is the statutory board responsible for the planning, development, and management of public housing in Singapore. The flats covered in this dataset are part of HDB’s public housing program.</p>
         </section>
-
       </body>
     </html>
   `);
 });
-
   
   // Example route: Get towns
 app.get('/towns', (req, res) => {
